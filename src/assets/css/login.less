@@ -1,0 +1,94 @@
+.block-login {
+    padding-top: 30px;
+}
+.login-left {
+    width: 58%;
+    float: left;
+    .login-label {
+        background-color: #0eabd8;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 22px 30px;
+        position: relative;
+        >p, >span {
+            color: #fff;
+            text-align: right;
+        }
+        >p {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+        >span {
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 15px;
+        }
+        &:before, &:after {
+            content: "";
+            position: absolute;
+        }
+        &:before {
+            background: url(../images/arr-tooltip.png) no-repeat center top;
+            width: 43px;
+            height: 30px;
+            bottom: -30px;
+            right: 46px;
+        }
+        &:after {
+            background: url(../images/light-idea.png) no-repeat center top;
+            width: 87px;
+            height: 118px;
+            top: 10px;
+            left: 0;
+        }
+    }
+}
+.login-right {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+    width: 421px;
+    min-height: 436px;
+    .login-iframe {
+        border: 0 none;
+        width: 421px;
+        height: 100%;
+        position: absolute;
+    }
+    .loading {
+        position: absolute;
+    }
+    .loading-icon {
+        margin-top: 8vw;
+    }
+}
+.login-computer {
+    padding: 28px 44px 10px;
+    text-align: center;
+    img {
+        margin-right: 42px;
+        display: inline-block;
+        vertical-align: top;
+        width: 224px;
+        height: auto;
+    }
+    ul {
+        list-style: none;
+        margin-top: 30px;
+        display: inline-block;
+        >li {
+            margin: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            text-align: left;
+        }
+        .icon-maximize, .icon-demographic, .icon-yeild-optiminzation, .icon-pricing-model, .icon-manage-ad {
+            position: absolute;
+            top: 9px;
+            left: 0;
+        }
+    }
+}

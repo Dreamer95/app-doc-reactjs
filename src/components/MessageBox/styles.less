@@ -1,0 +1,27 @@
+//popup
+.modal-dialog{ color: #666; max-width: none;
+    &.pl-60{
+        .modal-header, .modal-body, .modal-footer{ padding-left: 60px; position: relative;}
+        .icon-success-green, .icon-error-red{ position: absolute; left: 18px;}
+        .icon-warning{ position: absolute; left: 16px;}
+    }
+
+    .modal-content{ border: 0; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3); box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+
+    .modal-header{ border: 0; position: relative; padding-right: 36px;
+        .modal-title{ font-size: 16px; min-height: 20px; line-height: 1.3;}
+
+        .close{ position: absolute; right: 10px; top: 8px; padding: 0; margin: 0; font-size: 0;
+            &:focus, .icon-close-square:focus{ outline: none;}
+            &:hover{
+                .icon-close-square{ background-position: -50px -800px;}
+            }
+        }
+    }
+
+    .modal-footer{ border: 0;
+        .btn+.btn{ margin-left: 0;}
+    }
+}
+
+

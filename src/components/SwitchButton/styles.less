@@ -1,0 +1,31 @@
+.custom-switch{ position:relative;
+	&.on-off{
+        input[type=checkbox]:checked + label:after{ content: "ON";}
+        label{ width: 40px;
+            &:after{ content: "OFF"; font: bold 10px/14px "Roboto";}
+        }
+    }
+    &.disabled{
+        input[type=checkbox]+label{ background-color: #c5c5c5!important;}
+    }
+    label{ background-color: #b0b0b0; border-radius: 20px; cursor: pointer; width: 25px; height: 14px; position: relative; transition-duration: .5s; margin: 0; vertical-align: middle;
+		&:after{ content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; padding-left: 10px; color: #fff; text-align: center;}
+		&:before{ background-color: #fff; border-radius: 50%; content: ""; width: 10px; height: 10px; position: absolute; top: 2px; left: 2px;}
+	}
+	input[type=checkbox]{ position: absolute; clip: rect(0,0,0,0); opacity: 0; visibility: hidden;}
+	input[type=checkbox]:checked+label { background-color: #9cce24;
+		&:before{ left: auto; right: 2px;}
+		&:after{ content: ""; padding-left: 0; padding-right: 10px;}
+	}
+	.loading {
+		background: 0 0;
+		left: inherit;
+		.loading-icon {
+			width: 1vw;
+			height: 1vw;
+			background-size: 1vw 1vw;
+			margin-top: 3px;
+			background-repeat: no-repeat;
+		}
+	}
+}

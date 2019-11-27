@@ -1,0 +1,74 @@
+.ants-component-title {
+  font-size: 28px;
+  color: #333333;
+  line-height: 40px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.ants-component-edit {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.ants-component-delete{
+  position: absolute;
+  opacity: .5;
+  top: 40px;
+  right: 10px;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ants-component-edit:hover {
+  opacity: 1;
+}
+
+.ants-document-content {
+  position: relative;
+  color: #333;
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.7;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  h2 {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  p {
+    color: #3d4145;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+  }
+  ol {
+    li {
+      line-height: 1.75em;
+      padding-left: 30px;
+      background-size: 4px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  blockcode {
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 20px;
+    p {
+      font-size: 13px;
+    }
+  }
+}

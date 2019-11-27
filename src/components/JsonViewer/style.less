@@ -1,0 +1,112 @@
+.json-viewer {
+
+    &__container {
+        position: relative;
+        padding-left: 30px;
+        &--isOpen {
+            display: -webkit-box;
+        }
+    }
+
+    &__line {
+        content: '';
+        position: absolute;
+        border-left: 1px solid #fff;
+        height: 100%;
+        left: -15px;
+    }
+
+    &__key-value-wrap {
+        position: relative;
+        display: block;
+        padding-left: 15px;
+        line-height: 20px;
+    }
+
+    &__key {
+        margin-left: 15px;
+
+        [data-toggle-dummy="closed"] {
+            display: none;
+        }
+
+        [data-toggle-dummy="open"] {
+            display: inline-flex;
+
+            .json-viewer__close-bracket {
+                margin-left: 0;
+            }
+        }
+
+        [data-toggle="closed"] {
+            display: none;
+        }
+
+        [data-toggle="open"] {
+            // display: block;
+        }
+    }
+
+    &__value {
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    &__close-bracket {
+        margin-left: 20px;
+
+        &--isOpen {
+            margin-left: 0;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    &__sort-icon {
+        cursor: pointer;
+        margin-left: 23px;
+
+        &--isOpen {
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    &__dots {
+        margin: 0;
+        display: inline;
+        font-weight: bold;
+    }
+
+    &__arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #000;
+        display: inline-flex;
+        position: absolute;
+        top: 5px;
+        cursor: pointer;
+        left: 13px;
+    }
+
+    &__arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        display: inline-flex;
+        position: absolute;
+        top: 8px;
+        cursor: pointer;
+        left: 11px;
+    }
+
+    &__empty-span {
+        font-size: 25px;
+        margin-left: 25px;
+        line-height: 0;
+    }
+}
